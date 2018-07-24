@@ -113,12 +113,12 @@ def f():
 
 def s():
 	return render_template("vid.html")
-# @app.route("/submit", methods=["POST"])
-# def sub():
-# 	myfeedback=request.form["feedBack"]
-# 	mychange=request.form["Change"]
+@app.route("/submit", methods=["POST"])
+def sub():
+	myfeedback=request.form["feedBack"]
+	mychange=request.form["Change"]
 
 
-	# return render_template("submit.html", feedBack=myfeedback, Change=mychange)
+	return render_template("submit.html", feedBack=myfeedback, Change=mychange)
 if __name__=="__main__":
 	app.run(port=8500,debug=True)
