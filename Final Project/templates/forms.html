@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>form practice</title>
+	<link rel="stylesheet" type="text/css" href="Homestyle.html">
+
+</head>
+<body>
+	{% extends "HOME.html" %}
+
+	{% block body %}
+	<center>
+		<p class="sa">Feedback</p>
+	</center>
+
+	<form action="link here" method="POST">
+		<div>
+			<label>feedBack</label>
+			<input type="text" name="feedBack">
+		</div>
+
+		<br>
+		<div>
+			<label>What do you want th change in the animation world?</label>
+			<input type="text" name="Change" >
+		</div>
+		<br>
+
+	
+		<div>
+			<input type="submit" name="submit" value="thisi is a submit button" >
+
+		</div>
+	</form>
+	{% endblock %}
+
+</body>
+</html>
