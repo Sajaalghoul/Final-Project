@@ -1,0 +1,66 @@
+<html>
+
+<head>
+	<title>SAJA.AL_GHOUL</title>
+	<link rel="stylesheet" type="text/css" href="../static/mystyleJavascrip.css">
+<head>
+	{% extends "HOME.html" %}
+
+	{% block body %}
+
+<body>
+	<center>
+<h1>       Hi, my name is Saja Al_ghoul     </h1>
+<img id="noway" width = "280" src="../static/SOSO.png">
+<div>
+	<button id="But"  onmouseout=changeback(this) onmouseover=changeText(this) onclick=changepicture() >Change the photo ! </button>
+<h2>My family</h2>
+<h3>I have 3 sisters and 3 brothers</h3>
+<a href="wow.html" target="blank">MY family!</a>
+</div>
+
+<h4 id="spsp">ACCESS</h4>	
+<p id="sss"> Access is a scholarship to study English for 2 years</p>
+<img id="WAY" width = "500" src="../static/ACCESS.png">
+<div>
+	<button id="Bsoso" onclick=changepictures() >ANOTHER PHOTOE OF ACCESS!</button>
+</div>
+
+<h5>We code </h5>
+<img id="lala" width = "500" src="../static/wecode.png">
+<img id="lola" width = "500" src="../static/wecode2.png">
+<script>
+var i=0
+function changepicture (id){
+	i++;
+	if (i=1) {
+	document.getElementById("noway").src="../static/sajo.jpeg";
+	alert("This is apicture with my friend Amna");
+	}
+}
+
+function changeText(idName){
+	idName.style.color="green";}
+
+	function changeback(idName){
+	idName.style.color="blue";}	
+function changepictures (id){
+	document.getElementById("WAY").src="../static/DADA.png";
+
+}
+</script>
+
+
+<h1 id="first" > Three facts about me : </h1>
+<oL>
+ <li> I love the black color</li>
+ 
+ <li> I hate darkness</li>
+ <li> I hope to travel to Turkey</li>
+</oL>
+
+
+<a class="sajaweb" href ="https://www.youtube.com/"target="-blank" >This is my best website!</a>
+</center>	
+	{% endblock %}
+</body>

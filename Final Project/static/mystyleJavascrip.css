@@ -1,0 +1,43 @@
+body {
+	background-color: black
+}
+h1 {
+	color: pink;
+	border:solid;
+	padding: 10px 10px 10px 10px;
+	margin:20px
+
+  }
+#first{
+ 	color:pink;
+ 	border:solid;
+ 	padding: 10px 10px 10px 10px;
+ 	margin:20px
+
+ }
+ol{
+	color: lightpink;
+}
+
+a:hover{
+	color:lightpink;
+	border:solid;
+	padding: 20px 30px 20px 30px;
+
+}
+h2,h4,h5{
+	color:lightblue;
+	border:solid;
+	padding: 10px 10px 10px 10px;
+	margin:20px
+}	
+h3{
+	color:lightblue;
+}
+p{
+	color:blue;
+}
+
+#saja{
+	color:"blue";
+}

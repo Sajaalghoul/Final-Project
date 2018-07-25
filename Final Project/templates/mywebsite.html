@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="../static/mastyle.css">
+	<title> My website</title>
+
+</head>
+
+
+
+
+
+<body id="BackGround" style="background:black">
+	{% extends "HOME.html" %}
+
+	{% block body %}
+	
+	
+
+
+	<audio autoplay>
+		<source src="hello.mp3" type="audio/mp3">
+	</audio>
+
+	<center>
+	
+	<h1 id="text"> About Me</h1>
+	<img width="300" src="../static/hala.jpg">
+	<p> My name is Hala Nabil and
+	I'm a 15- year old student. </p>
+	</center>
+	 
+	
+	<hr/>
+	<center>
+		<h1 id="first" > About My Family</h1>
+		<h4> I have four sisters and one brother.</h4>
+		<!-- <ul style="text-align:left"> -->
+		<ul>
+			<li>Shomou</li>
+			<li>Tasnim</li>
+			<li>Hanin</li>
+			<li>Mohammed</li>
+			<li>Ola</li>
+		</ul>
+	<hr/>
+		<h1 id="textcolor" > My interests</h1>
+		<p id= "textie" >I'm interested in drawing, Movies, music , and writing </p>
+		<img id="another" width="300" src="../static/A.jpg">
+	<hr/>
+		
+		<a href="http://www.disneyinternational.com/"target="_self">Disney</a>
+		<a href="file:///home/wecode/Desktop/Flask/personalsite/templates/mywebsite.html"target="_self">my personal website</a>
+		 
+
+		<button id = "But" onclick= changeName()> Click Me! </button>
+		<button id = "change" onmouseout= changeDesign()> Change design! </button>
+		
+
+
+		<script>
+
+		var i=0;
+		function changeName(){
+			document.getElementById("But").innerHTML="Hello!";
+			document.getElementById("textie").style.color = 'white';
+			document.getElementById("another").src="../static/d.jpg";
+				i++;				
+				if (i%2==0){
+				alert("Hello again!");
+			
+
+					
+				}
+		}
+		function changeDesign(){
+			document.getElementById("change").innerHTML="Done";
+			document.getElementById("BackGround").style.background = "pink";
+			document.getElementById("text").style.color = "black";
+			document.getElementById("first").style.color = "black";
+			//document.getElementById("first").style.text-align="left";
+			document.getElementById("textcolor").style.color = "black";
+
+
+		}
+
+
+
+
+
+
+		</script>
+
+
+
+
+	</center>
+	{% endblock %}
+	
+</body>
+</html>

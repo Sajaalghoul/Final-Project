@@ -1,0 +1,19 @@
+h1{padding: 10px 30px 30px 40px;
+border:solid;
+color:lightblue;
+
+}
+body{background-color:black;}
+
+p{color:blue;}
+#first{
+	color:lightblue;
+}
+h4{color:blue;}
+ul{color:blue;}
+a :hover{
+	color:blue;
+	border:solid;
+	
+
+}
