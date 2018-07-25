@@ -103,9 +103,9 @@ def websi():
 @app.route("/his")
 def W():
 	return render_template("History.html")
-@app.route("/our")
+@app.route("/team")
 def e():
-	return render_template("ourteam.html")
+	return render_template("abo.html")
 @app.route("/form")
 def f():
 	return render_template("forms.html")	

@@ -133,3 +133,21 @@ h4{
 	background-color: black;
 	color:white;
 }
+#info{
+	margin-left: 200px;
+	margin-bottom: 30px;
+	/*line-height: 9em;*/
+}
+
+.ha{
+	border: solid;
+	border-width: 2px;
+	padding: 10px 10px 10px 10px;
+	font-style: italic;
+	font-size: 30px;
+	background-color: black;
+	color: white;
+	border-radius: 20px
+ 
+
+}
